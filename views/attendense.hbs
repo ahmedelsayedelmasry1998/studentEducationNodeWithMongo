@@ -1,0 +1,24 @@
+<h2>Attendense</h2>
+<div class="manage">
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Present</th>
+        </tr>
+        {{#if students}}
+        {{#each students}}
+        <tr>
+            <td>{{this._id}}</td>
+            <td>{{this.studentId.name}}</td>
+            <td>
+              {{this.attendense}}
+            </td>
+        </tr>
+        {{/each}}
+        {{/if}}
+    </table>
+</div>
+<div class="add">
+    <a href="./addAttendense" class="addButton"><i class="fa-solid fa-plus"></i> Add New Attendense</a>
+</div>

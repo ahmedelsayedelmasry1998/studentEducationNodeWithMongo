@@ -1,0 +1,29 @@
+<h2>Manage Expenses</h2>
+<div class="addRow">
+    <form action="/updateExpenses" method="post">
+        <div class="row">
+            <span>Expenses</span>
+            <input type="text" name="expenses" value="{{expense.expenses}}" />
+            <input type="hidden" name="expensesId" value="{{expense._id}}" />
+        </div>
+        <div class="row">
+            <span>Amount</span>
+            <input type="number" name="amount" value="{{expense.amt}}" />
+        </div>
+        <div class="row">
+            <span>Remark</span>
+            <input type="text" name="remark" value="{{expense.remark}}" />
+        </div>
+        <div class="row">
+            <span>Branches</span>
+            <select name="branchId" id="">
+               {{#if branches}}
+               {{#each branches}}
+                    <option value="{{this._id}}">{{this.state}}</option>
+               {{/each}}
+               {{/if}}
+            </select>
+        </div>
+        <input type="submit" value="Update Expenses" class="">
+    </form>
+</div>

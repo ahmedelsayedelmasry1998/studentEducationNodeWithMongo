@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "66e880903b23c48fe866b362"
+  },
+  "date": {
+    "$date": "2024-09-19T00:00:00.000Z"
+  },
+  "attendense": "1",
+  "type": "staff",
+  "attendenseActive": 1,
+  "tutionId": {
+    "$oid": "66d9e18a093d409e7890c999"
+  },
+  "studentId": {
+    "$oid": "66e0e07cb033978bb59d9380"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e8a29e9cc953d9ea86d645"
+  },
+  "date": {
+    "$date": "2024-09-13T00:00:00.000Z"
+  },
+  "attendense": "0",
+  "type": "student",
+  "attendenseActive": 1,
+  "tutionId": {
+    "$oid": "66d9e18a093d409e7890c999"
+  },
+  "studentId": {
+    "$oid": "66e0e866d71b0196e6c65bab"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,30 @@
+<h2>Fees</h2>
+ <div class="manage">
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Branch Name</th>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Date</th>
+            <th>Total Fees</th>
+        </tr>
+        {{#if fees}}
+        {{#each fees}}
+        <tr>
+            <td style="font-size: 12px;">{{this._id}}</td>
+            <td>{{this.branchId.state}}</td>
+            <td>{{this.studentId.name}}</td>
+            <td>{{this.amt}}</td>
+            <td style="font-size: 12px;">{{this.date}}</td>
+            <td>{{this.studentId.totalFees}}</td>
+        </tr> 
+        {{/each}}
+        {{/if}}
+        
+    </table>
+ </div>
+<div class="add">
+<a href="/addFees" class="addButton"><i class="fa-solid fa-plus"></i> Add New Fees</a>
+<a href="" onclick="window.print()" class="print">View Report <i class="fa-solid fa-arrow-right"></i></a>
+</div>

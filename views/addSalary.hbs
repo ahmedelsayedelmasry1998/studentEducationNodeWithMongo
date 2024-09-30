@@ -1,0 +1,38 @@
+<h2>Salary</h2>
+<div class="addRow">
+    <form action="/addSalary" method="post">
+        <div class="row">
+            <span>Date</span>
+            <input type="date" name="date" />
+        </div>
+        <div class="row">
+            <span>Amount</span>
+            <input type="number" name="amount" />
+        </div>
+        <div class="row">
+            <span>Total</span>
+            <input type="number" name="total" />
+        </div>
+        <div class="row">
+            <span>Branches</span>
+            <select name="branchId" id="">
+                 {{#if branches}}
+                {{#each branches}}
+                <option value="{{this._id}}">{{this.state}}</option>
+                {{/each}}
+                {{/if}}
+            </select>
+        </div>
+        <div class="row">
+            <span>Staffs</span>
+            <select name="staffId" id="">
+                {{#if staffs}}
+                {{#each staffs}}
+                <option value="{{this._id}}">{{this.name}}</option>
+                {{/each}}
+                {{/if}}
+            </select>
+        </div>
+        <input type="submit" value="Save Salary" class="">
+    </form>
+</div>

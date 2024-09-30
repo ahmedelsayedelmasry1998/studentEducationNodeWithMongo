@@ -1,0 +1,56 @@
+[{
+  "_id": {
+    "$oid": "66e387437936da269dbdf134"
+  },
+  "photo": "/upload_files/stud.png",
+  "name": "Galal tarek",
+  "middleName": "Zalaka",
+  "sex": "male",
+  "phone": "0124555588",
+  "email": "www.galal@gmail.com",
+  "qualifaction": "Very Good",
+  "password": "123456789",
+  "totalSalary": "8000",
+  "paidSalary": "800",
+  "exp": "11-11-2020",
+  "address": "Alex",
+  "state": "Maried",
+  "city": "Cairo,eg",
+  "type": "Manager",
+  "staffActive": 1,
+  "tutionId": {
+    "$oid": "66d9e18a093d409e7890c999"
+  },
+  "branchId": {
+    "$oid": "66dde9343e0444f35cd3ac04"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e396a75f349280447620f3"
+  },
+  "photo": "/upload_files/student_clg.jpg",
+  "name": "Mohamed Elmasry",
+  "middleName": "Zalaka",
+  "sex": "male",
+  "phone": "01245555599",
+  "email": "www.ahmed@gmail.com",
+  "qualifaction": "Very Good",
+  "password": "12345",
+  "totalSalary": "8000",
+  "paidSalary": "500",
+  "exp": "11-14-2020",
+  "address": "Alex",
+  "state": " Not Maried",
+  "city": "alex",
+  "type": "Manager",
+  "staffActive": 1,
+  "tutionId": {
+    "$oid": "66d9e18a093d409e7890c999"
+  },
+  "branchId": {
+    "$oid": "66dde9343e0444f35cd3ac04"
+  },
+  "__v": 0
+}]

@@ -1,0 +1,35 @@
+<h2>Manage Branch</h2>
+ <div class="manage">
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Address</th>
+            <th>State</th>
+            <th>City</th>
+            <th>Contact</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        {{#if branches}}
+          {{#each branches}}
+           <tr>
+            <td style="font-size: 10px;">{{this._id}}</td>
+            <td>{{this.address}}</td>
+            <td>{{this.state}}</td>
+            <td>{{this.city}}</td>
+            <td>{{this.phone}}</td>
+            <td>
+                <a href="/updateBranch/{{this._id}}" class="editButton">Edit <i class="fa-solid fa-pen-to-square"></i></a>
+            </td>
+            <td>
+                <a href="/deleteBranch/{{this._id}}" class="deleteButton">Delete <i class="fa-solid fa-trash"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+        {{/if}}
+      
+    </table>
+ </div>
+<div class="add">
+<a href="/addBranch" class="addButton"><i class="fa-solid fa-plus"></i> Add New Branch</a>
+</div>

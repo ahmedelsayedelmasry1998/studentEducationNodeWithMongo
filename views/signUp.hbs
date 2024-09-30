@@ -1,0 +1,40 @@
+<div class="content">
+    <h2>Sign Up</h2>
+    {{#if signUpError}}
+    {{#each signUpError}}
+    <div class="error">{{this}}</div>
+    {{/each}}
+    {{/if}}
+    <div class="rigaster">
+        <div class="loginDiv">
+            <h3>Welcome</h3>
+            <p>Manage your tuition details with us and save your precious time.</p>
+            <a href="/adminLogin" class="btnSend">Login</a>
+        </div>
+        <div class="registarDiv">
+            <form action="/aboutUs" method="post">
+                <input type="text" placeholder="First Name ...." name="fName">
+                <input type="text" placeholder="Last Name ...." name="lName">
+                <input type="email" placeholder="Email Id ...." name="emailId">
+                <input type="text" placeholder="Mobile No (With Currently Code) ...." name="mobileNumber">
+                <input type="password" placeholder="Password ...." name="password">
+                <input type="password" placeholder="Re Enter Password ...." name="rPassword">
+                <input type="text" placeholder="Classes Name ...." name="classesName">
+                <input type="text" placeholder="Tageline ...." name="tageline">
+                <select name="selectCourse" id="">
+                    <option value="">-- Select Course --</option>
+                   {{#if courses}}
+                   {{#each courses}}
+                            <option value="{{this.shortName}}">{{this.name}}</option>
+                   {{/each}}
+                   {{/if}}
+                </select>
+                <input type="text" placeholder="Address ...." name="address">
+                <input type="text" placeholder="State ...." name="state">
+                <input type="text" placeholder="Pnone Nu. " name="phoneNumber">
+                <input type="url" placeholder="Url Of Your Website .... " name="url">
+                <input type="submit" value="Registar" class="btnLogin">
+            </form>
+        </div>
+    </div>
+</div>

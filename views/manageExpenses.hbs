@@ -1,0 +1,37 @@
+<h2>Manage Expenses</h2>
+<div class="manage">
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Branch</th>
+            <th>Expenses</th>
+            <th>Amount</th>
+            <th>Remark</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        {{#if expenses}}
+        {{#each expenses}}
+        <tr>
+            <td style="font-size: 10px;">{{this._id}}</td>
+            <td>{{this.branchId.city}}</td>
+            <td>{{this.expenses}}</td>
+            <td>{{this.amt}}</td>
+            <td>{{this.remark}}</td>
+            <td>
+                <a href="/updateExpenses/{{this._id}}" class="editButton">Edit <i
+                        class="fa-solid fa-pen-to-square"></i></a>
+
+            </td>
+            <td>
+                <a href="/deleteExpenses/{{this._id}}" class="deleteButton">Delete <i class="fa-solid fa-trash"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+        {{/if}}
+
+    </table>
+</div>
+<div class="add">
+    <a href="/addExpenses" class="addButton"><i class="fa-solid fa-plus"></i> Add New Expenses</a>
+</div>

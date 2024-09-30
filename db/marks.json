@@ -1,0 +1,43 @@
+[{
+  "_id": {
+    "$oid": "66ea0de9a0955a90bea80eb0"
+  },
+  "eng1": 88,
+  "gramer": 99,
+  "maths": 77,
+  "sci": 85,
+  "env": 87,
+  "gk": 85,
+  "hindi": 98,
+  "computer": 78,
+  "guj": 57,
+  "studentId": {
+    "$oid": "66e0e07cb033978bb59d9380"
+  },
+  "date": {
+    "$date": "2024-09-17T23:16:57.297Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66ea15677ddf85f1c8f4b02f"
+  },
+  "eng1": 100,
+  "gramer": 90,
+  "maths": 80,
+  "sci": 70,
+  "ss": 60,
+  "env": 50,
+  "gk": 55,
+  "hindi": 65,
+  "computer": 75,
+  "guj": 85,
+  "studentId": {
+    "$oid": "66e0e866d71b0196e6c65bab"
+  },
+  "date": {
+    "$date": "2024-09-17T23:48:55.745Z"
+  },
+  "__v": 0
+}]

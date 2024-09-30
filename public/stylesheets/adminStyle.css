@@ -1,0 +1,692 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "SUSE-Regular";
+    src: url("../fonts/NewAmsterdam-Regular.ttf");
+}
+
+@font-face {
+    font-family: "NewAmsterdam-Regular";
+    src: url("../fonts/NewAmsterdam-Regular.ttf");
+}
+
+:root {
+    --main-font: "NewAmsterdam-Regular";
+    --sub-font: "SUSE-Regular";
+    --header-color: #343A40;
+    --footer-color: #343A40;
+}
+
+div.mainContainer {
+    min-height: 100vh;
+    display: flex;
+}
+
+div.mainContainer .links {
+    width: 20%;
+    background-color: #33372C;
+    color: white;
+    font-family: var(--sub-font);
+}
+
+div.mainContainer .links ul {
+    width: 100%;
+    list-style-type: none;
+    margin-top: -8px;
+}
+
+div.mainContainer .links ul li {
+    padding: 10px;
+    transition: all 2s ease-in;
+}
+
+div.mainContainer .links ul li a:hover {
+   color: yellowgreen;
+}
+
+div.mainContainer .links ul li a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    transition: all 0.3s ease-in;
+}
+
+div.mainContainer .links h2 {
+    text-align: center;
+    font-family: var(--main-font);
+    line-height: 50px;
+    border-bottom: 1px solid white;
+}
+
+div.mainContainer .contents {
+    width: 80%;
+    display: grid;
+    grid-template-rows: 50px auto 250px;
+}
+
+div.mainContainer .contents header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    line-height: 50px;
+}
+
+div.mainContainer .contents header div.logo {
+    width: 10%;
+    text-align: center;
+}
+
+div.mainContainer .contents header div.logo img {
+    width: 80%;
+    height: 80%;
+    display: block;
+    margin: 5px auto;
+}
+
+div.mainContainer .contents header div.regastration {
+    width: 80%;
+    text-align: right;
+    padding-right: 40px;
+}
+
+div.mainContainer .contents header div.regastration a {
+    color: gray;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: var(--sub-font);
+}
+
+div.mainContainer .contents div.content {
+    font-family: var(--sub-font);
+}
+div.mainContainer .contents div.content h2{
+    text-align: center;
+    padding: 10px 0px 10px;
+}
+div.mainContainer .contents div.content div.manage{
+   width: 95%;
+   margin: 10px auto;
+   overflow-x: auto;
+}
+div.mainContainer .contents div.content div.manage table{
+   border: 1px solid gray;
+   border-collapse: collapse;
+   table-layout: fixed;
+   width: 100%;
+   text-align: center;
+}
+div.mainContainer .contents div.content div.manage table tr td{
+   border: 1px solid gray;
+  height: 50px !important;
+  line-height: 50px;
+}
+div.mainContainer .contents div.content div.manage table tr th{
+   border: 1px solid gray;
+  height: 50px !important;
+  line-height: 50px;
+}
+.add{
+    margin-bottom: 50px;
+}
+.addButton{
+background-color: gray;
+padding: 5px 10px;
+border-radius: 5px;
+cursor: pointer;
+margin: 20px auto;
+text-decoration: none;
+margin-left: 2.5%;
+color: white;
+transition: all 0.2s linear;
+margin-bottom: 50px !important;
+}
+.addButton:hover{
+background-color: green;
+}
+.deleteButton{
+    outline: none;
+    border: 0px;
+    background-color: red;
+    padding: 1px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    text-decoration: none;
+    margin-left: 2.5%;
+    color: white;
+    transition: all 0.2s linear;
+}
+div.mainContainer .contents div.manage table tr td img{
+    width: 100% !important;
+    height: 100% !important;
+}
+.deleteButton:hover{
+    background-color: #33372C;
+}
+.editButton{
+    outline: none;
+    border: 0px;
+    background-color: green;
+    padding: 1px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    text-decoration: none;
+    margin-left: 2.5%;
+    color: white;
+    transition: all 0.2s linear;
+}
+.editButton:hover{
+    background-color: gray;
+}
+@media (max-width : 650px)
+{
+    div.mainContainer .contents div.content div.manage{
+      font-size: 8px !important;
+     }
+     .editButton{
+        padding: 1px 4px;
+     }
+     .deleteButton{
+        padding: 1px 4px;
+     }
+}
+
+div.mainContainer .contents div.content div.manage{
+   overflow-x: scroll;
+}
+
+div.mainContainer .contents footer {
+    background-color: var(--header-color);
+    font-size: 16px !important;
+}
+
+div.mainContainer .contents footer div.textSocial {
+    width: 90%;
+    margin: 15px auto;
+    display: flex;
+    color: burlywood;
+    font-family: var(--main-font);
+}
+
+div.mainContainer .contents footer div.textSocial h3 {
+    font-size: 20px !important;
+}
+
+div.mainContainer .contents footer div.textSocial div {
+    width: 25%;
+}
+
+div.mainContainer .contents footer div.textSocial div h3 {
+    color: white;
+}
+
+div.mainContainer .contents footer div.textSocial div a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    transition: all 0.3s ease;
+}
+
+div.mainContainer .contents footer div.textSocial div ul {
+    list-style-type: circle;
+}
+
+div.mainContainer .contents footer div.textSocial div h6 {
+    font-size: 14px !important;
+}
+
+div.mainContainer .contents footer div.textSocial div a:hover {
+    background-color: #DDD;
+    color: black;
+}
+
+div.mainContainer .contents footer div.photoSocial {
+    text-align: center;
+    color: white;
+    font-size: 17px;
+}
+
+div.mainContainer .contents footer div.textSocial ul li:hover {
+    color: white;
+    cursor: pointer;
+}
+@media (max-width : 1000px){
+    div.mainContainer .links h2 {
+        font-size: 16px;
+    }
+}
+@media (max-width : 800px){
+    div.mainContainer .links h2 {
+        font-size: 14px;
+    }
+    div.mainContainer .links {
+        font-size: 12px;
+    }
+    div.mainContainer .contents header div.regastration a {
+        font-size: 14px;
+    }
+    div.mainContainer .contents footer div.textSocial h3 {
+        font-size: 14px !important;
+    }
+    div.mainContainer .contents footer div.textSocial div h6 {
+        font-size: 10px !important;
+    }
+    div.mainContainer .contents footer div.textSocial {
+      font-size: 10px !important;
+    }
+   
+}
+@media (max-width : 600px){
+    div.mainContainer .links h2 {
+        font-size: 10px;
+    }
+    div.mainContainer .links {
+        font-size: 10px;
+    }
+    div.mainContainer .links ul li {
+        margin-left: -20px;
+    }
+    div.mainContainer .contents footer div.photoSocial {
+        font-size: 10px;
+    }
+    div.mainContainer .contents footer div.textSocial div ul {
+        font-size: 8px !important;
+      }
+}
+@media (max-width : 500px){
+    div.mainContainer .links ul li {
+        margin-left: -30px;
+    }
+    div.mainContainer .contents footer div.textSocial h3 {
+        font-size: 10px !important;
+    }
+    div.mainContainer .contents footer div.textSocial div h6 {
+        font-size: 8px !important;
+    }
+    div.mainContainer .contents footer div.textSocial div a {
+        padding: 3px 6px;
+    }
+    div.mainContainer .contents footer div.textSocial div ul {
+      font-size: 8px !important;
+    }
+    div.mainContainer .contents footer div.textSocial div ul {
+        font-size: 6px !important;
+      }
+}
+@media (max-width : 400px){
+    div.mainContainer .contents footer div.textSocial div a {
+       font-size: 6px !important;
+    }
+    div.mainContainer .contents footer div.textSocial div ul {
+        font-size: 4px !important;
+      }
+}
+@media (max-width : 375px){
+    div.mainContainer .contents footer div.textSocial div a {
+       font-size: 4px !important;
+       margin-left: 2px;
+    }
+    div.mainContainer .contents footer div.textSocial div ul {
+        font-size: 3px !important;
+      }
+}
+
+div.mainContainer .contents div.content div.addRow{
+    width: 60%;
+    margin: 1% auto;
+ }
+div.mainContainer .contents div.content div.addRow div.row input,div.mainContainer .contents div.content div.addRow div.row select{
+    width: 80% !important;
+    margin: 5px auto;
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    transition: all 0.2s ease;
+ }
+div.mainContainer .contents div.content div.addRow div.row input:hover{
+    outline: 2px solid #ccc;
+ }
+div.mainContainer .contents div.content div.addRow div.row select:hover{
+    outline: 2px solid #ccc;
+ }
+div.mainContainer .contents div.content div.addRow div.row span{
+   margin-left: 9%;
+ }
+div.mainContainer .contents div.content div.addRow input[type="submit"]{
+   margin-left: 9% !important;
+   margin-top: 2%;
+   margin-bottom: 3%;
+   background-color: green;
+    outline: none;
+    border: 0px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.2s linear;
+ }
+ div.mainContainer .contents div.content div.addRow input[type="submit"]:hover{
+    background-color: gray;
+}
+.error{
+    text-align: center;
+    color: red;
+    font-family: var(--sub-font);
+    padding-bottom: 20px;
+}
+@media (max-width : 1024px)
+{
+    div.mainContainer .contents div.content div.addRow{
+        width: 80%;
+    }
+    
+}
+@media (max-width : 768px)
+{
+    div.mainContainer .contents div.content div.addRow{
+        width: 100%;
+    }
+    
+}
+.print{
+    background-color: #33372C;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none !important;
+    border-radius: 5px;
+    transition:  all 0.3s linear;
+}
+.print:hover{
+    background-color: navy;
+}
+/*Manage Reports*/
+div.mainContainer .contents div.content div.reports{
+    width: 90%;
+    margin: 2% auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+div.mainContainer .contents div.content div.reports div{ 
+    width: calc(92%/3);
+    height: 250px;
+    background-color: gray;
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+    color: white;
+}
+.handel-icon{
+    font-size: 100px !important;
+}
+div.mainContainer .contents div.content div.reports div h4{ 
+   margin: 20px auto;
+   letter-spacing: 4px;
+}
+div.mainContainer .contents div.content div.reports div a{ 
+   background-color: white;
+   padding: 5px 10px;
+   border-radius: 5px;
+   text-decoration: none;
+   color: black;
+   transition: all 0.3s linear;
+}
+div.mainContainer .contents div.content div.reports div a:hover{ 
+   background-color: navy;
+   color: white;
+}
+@media(max-width:900px){
+    div.mainContainer .contents div.content div.reports div{ 
+        width: calc(94%/2);
+    }
+}
+@media(max-width:600px){
+    div.mainContainer .contents div.content div.reports { 
+       flex-direction: column;
+       justify-content: center;
+    }
+    div.mainContainer .contents div.content div.reports div{ 
+      width: 95%;
+    }
+}
+/*Manage Reports*/
+/*Manage Salary*/
+div.mainContainer .contents div.content div.searchSalary{
+    width: 90%;
+    margin: 3% auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+div.mainContainer .contents div.content div.searchSalary div.customSearch{
+    margin: 2% auto;
+   /* text-align: center; */
+}
+div.mainContainer .contents div.content div.searchSalary div.customSearch input{
+   border:none;
+    margin: 5px auto;
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    transition: all 0.2s ease;
+    width: 300px;
+    background-color: gray;
+    color: white;
+}
+div.mainContainer .contents div.content div.searchSalary div.customSearch input:hover{
+    outline: 2px solid #ccc;
+}
+/*Manage Salary*/
+/*Manage Profile*/
+div.mainContainer .contents div.content div.profile div.tution{
+    display: flex;
+}
+div.mainContainer .contents div.content div.profile div.tution div.logo{
+   width: 33.3%;
+}
+
+div.mainContainer .contents div.content div.profile div.tution div.info{
+   width: 66.6%;
+}
+div.mainContainer .contents div.content div.profile div.tution div.info input{
+    border:none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    transition: all 0.2s ease;
+    width: 80%;
+    background-color: gray;
+    color: white;
+    margin-bottom: 1%;
+}
+div.mainContainer .contents div.content div.profile div.tution div.info input:hover{
+    outline: 2px solid #ccc;
+}
+div.mainContainer .contents div.content div.profile div.profileAction{
+    display: flex;
+}
+div.mainContainer .contents div.content div.profile div.profileAction{
+    display: flex;
+    
+    margin: 3% auto;
+}
+div.mainContainer .contents div.content div.profile div.profileAction div.actions{
+    width: 33.3%;
+    padding-left: 5%;
+}
+div.mainContainer .contents div.content div.profile div.profileAction div.info{
+    width: 66.6%;
+}
+div.mainContainer .contents div.content div.profile div.profileAction div.info input{
+    border:none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    transition: all 0.2s ease;
+    width: 80%;
+    background-color: gray;
+    color: white;
+    margin-bottom: 1%;
+}
+div.mainContainer .contents div.content div.profile div.profileAction div.actions table{
+    width: 80%;
+    border: 1px solid #ccc;
+    table-layout: fixed;
+}
+div.mainContainer .contents div.content div.profile div.profileAction div.actions table tr{
+    height: 80px;
+}
+div.mainContainer .contents div.content div.profile div.profileAction div.actions table tr td{ 
+   border: 1px solid #ccc;
+   text-align: center;
+}
+div.mainContainer .contents div.content div.profile div.profileAction div.info input:hover{
+    outline: 2px solid #ccc;
+}
+div.mainContainer .contents div.content div.profile div.profileAction div.info input[type="submit"]{
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-color: green;
+     outline: none;
+     border: 0px;
+     padding: 5px 20px;
+     border-radius: 5px;
+     cursor: pointer;
+     color: white;
+     transition: all 0.2s linear;
+     width:20%;
+     margin-left: -1%;
+  }
+  div.mainContainer .contents div.content div.profile div.profileAction div.info input[type="submit"]:hover{
+     background-color: gray;
+ }
+ @media (max-width:900px)
+ {
+    div.mainContainer .contents div.content div.profile div.tution{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    div.mainContainer .contents div.content div.profile div.tution div.logo{
+      width: 70%;
+    }
+    
+    div.mainContainer .contents div.content div.profile div.tution div.info{
+        width: 70%;
+    }
+    div.mainContainer .contents div.content div.profile div.profileAction{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    div.mainContainer .contents div.content div.profile div.profileAction div.actions{
+        width: 70%;
+    }
+    div.mainContainer .contents div.content div.profile div.profileAction div.info{
+        width: 70%;
+    }
+ }
+ @media (max-width:500px)
+ {
+    div.mainContainer .contents div.content div.profile div.tution div.logo{
+      width: 90%;
+    }
+    
+    div.mainContainer .contents div.content div.profile div.tution div.info{
+        width: 90%;
+    }
+    div.mainContainer .contents div.content div.profile div.profileAction div.actions{
+        width: 90%;
+    }
+    div.mainContainer .contents div.content div.profile div.profileAction div.info{
+        width: 90%;
+    }
+    div.mainContainer .contents div.content div.profile div.profileAction div.info input[type="submit"]{
+         width:40%;
+      }
+ }
+/*Manage Profile*/
+/*Manage Dashboard*/
+div.mainContainer .contents div.content div.chart{
+    width: 90%;
+    margin: 2% auto 4%;
+}
+div.mainContainer .contents div.content div.chart canvas{
+   width: 100% !important;
+   height: 600px !important;
+}
+div.mainContainer .contents div.content div.notice{
+    width: 90%;
+    margin: 2% auto 2%;
+}
+div.mainContainer .contents div.content div.notice h3{
+   text-align: center;
+}
+div.mainContainer .contents div.content div.notice form input[type='text'],div.mainContainer .contents div.content div.notice form textarea{
+     outline: none;
+     border: 1px solid #ccc;
+     padding: 5px 20px;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: all 0.2s linear;
+     width:100%;
+     margin-bottom: 3px;
+}
+div.mainContainer .contents div.content div.notice input[type='reset']{
+    background-color: navy;
+    color: white;
+    border-radius: 5px;
+    width: 25%;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    transition: all 0.3s linear;
+}
+div.mainContainer .contents div.content div.notice input[type='reset']:hover{
+    background-color: blue;
+}
+div.mainContainer .contents div.content div.notice input[type='submit']{
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    width: 25%;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    transition: all 0.3s linear;
+}
+div.mainContainer .contents div.content div.notice input[type='submit']:hover{
+    background-color: grey;
+}
+/*Manage Dashboard*/
+/*Manage Search Salary*/
+div.mainContainer .contents div.content div#table{
+    width:90%;
+    margin: 3% auto;
+    }
+    div.mainContainer .contents div.content div#table table{
+    border: 1px solid #ccc;
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;
+    }
+    div.mainContainer .contents div.content div#table table tr{
+    height: 80px;
+    }
+    div.mainContainer .contents div.content div#table table tr td,div.mainContainer .contents div.content div#table table tr th{
+        border: 1px solid #ccc;
+    }
+    /*Manage Search Salary*/

@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "66e61d19787296b3648dbd72"
+  },
+  "expenses": "Wages",
+  "amt": 1000,
+  "remark": 10,
+  "expensesActive": 1,
+  "tutionId": {
+    "$oid": "66d9e18a093d409e7890c999"
+  },
+  "branchId": {
+    "$oid": "66dde9343e0444f35cd3ac04"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e620d9ab745fa610c2f6b4"
+  },
+  "expenses": "Wages updated",
+  "amt": 5000,
+  "remark": 500,
+  "expensesActive": 1,
+  "tutionId": {
+    "$oid": "66d9e18a093d409e7890c999"
+  },
+  "branchId": {
+    "$oid": "66dde9343e0444f35cd3ac04"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66e6371e69e182050ba0e52e"
+  },
+  "expenses": "Wages update",
+  "amt": 150,
+  "remark": 15,
+  "expensesActive": 1,
+  "tutionId": {
+    "$oid": "66d9e18a093d409e7890c999"
+  },
+  "branchId": {
+    "$oid": "66dde9343e0444f35cd3ac04"
+  },
+  "__v": 0
+}]

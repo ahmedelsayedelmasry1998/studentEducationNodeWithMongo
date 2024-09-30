@@ -1,0 +1,128 @@
+[{
+  "_id": {
+    "$oid": "66f9f8d2da7c1bacc1df4e13"
+  },
+  "shortName": "5",
+  "name": "STD 5",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f9f8d2da7c1bacc1df4e1b"
+  },
+  "shortName": "11 sci",
+  "name": "STD 11(SCI)",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f9f8d2da7c1bacc1df4e17"
+  },
+  "shortName": "9",
+  "name": "STD 9",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f9f8d2da7c1bacc1df4e19"
+  },
+  "shortName": "11 com",
+  "name": "STD 11(COMM)",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f9f8d2da7c1bacc1df4e18"
+  },
+  "shortName": "10",
+  "name": "STD 10",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f9f8d2da7c1bacc1df4e16"
+  },
+  "shortName": "8",
+  "name": "STD 8",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f9f8d2da7c1bacc1df4e1a"
+  },
+  "shortName": "12 com",
+  "name": "STD 12(COMM)",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f9f8d2da7c1bacc1df4e1c"
+  },
+  "shortName": "12 sci",
+  "name": "STD 12(SCI)",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f9f8d2da7c1bacc1df4e0d"
+  },
+  "shortName": "jkg",
+  "name": "Jr. Kg.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f9f8d2da7c1bacc1df4e0e"
+  },
+  "shortName": "skg",
+  "name": "Sr. Kg.",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f9f8d2da7c1bacc1df4e0f"
+  },
+  "shortName": "1",
+  "name": "STD 1",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f9f8d2da7c1bacc1df4e11"
+  },
+  "shortName": "3",
+  "name": "STD 3",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f9f8d2da7c1bacc1df4e15"
+  },
+  "shortName": "7",
+  "name": "STD 7",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f9f8d2da7c1bacc1df4e10"
+  },
+  "shortName": "2",
+  "name": "STD 2",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f9f8d2da7c1bacc1df4e14"
+  },
+  "shortName": "6",
+  "name": "STD 6",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f9f8d2da7c1bacc1df4e12"
+  },
+  "shortName": "4",
+  "name": "STD 4",
+  "__v": 0
+}]

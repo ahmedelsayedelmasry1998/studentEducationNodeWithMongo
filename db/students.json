@@ -1,0 +1,53 @@
+[{
+  "_id": {
+    "$oid": "66e0e07cb033978bb59d9380"
+  },
+  "photo": "/upload_files/admin_avatar_png.png",
+  "fatherName": "Elmasry",
+  "name": "Ahmed Elmasry",
+  "sex": "male",
+  "phone": "01245555588",
+  "email": "www.ahmed@gmail.com",
+  "password": "123456789",
+  "std": "456",
+  "address": "Alex",
+  "state": " Not Maried",
+  "city": "Cairo",
+  "totalFees": 54321,
+  "paidFees": 1234,
+  "studentActive": 1,
+  "tutionId": {
+    "$oid": "66d9e18a093d409e7890c999"
+  },
+  "branchId": {
+    "$oid": "66dde56b8ce2b76d854c86a8"
+  },
+  "__v": 0,
+  "matherName": "Kadiygaa"
+},
+{
+  "_id": {
+    "$oid": "66e0e866d71b0196e6c65bab"
+  },
+  "photo": "/upload_files/admin_avatar_png.png",
+  "fatherName": "Elmasry",
+  "name": "Mohamed Elmasry",
+  "sex": "male",
+  "phone": "01064907353",
+  "email": "www.ahmed@gmail.com",
+  "password": "54321",
+  "std": "123",
+  "address": "Cairo",
+  "state": " Not Maried",
+  "city": "alex",
+  "totalFees": 54321,
+  "paidFees": 12345,
+  "studentActive": 1,
+  "tutionId": {
+    "$oid": "66d9e18a093d409e7890c999"
+  },
+  "branchId": {
+    "$oid": "66ddfffc04b4bde090268b50"
+  },
+  "__v": 0
+}]

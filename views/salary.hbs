@@ -1,0 +1,29 @@
+<h2>Salary</h2>
+ <div class="manage">
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Date</th>
+            <th>Name</th>
+            <th>Branch</th>
+            <th>Amount</th>
+            <th>Total</th>
+        </tr>
+        {{#if resaults}}
+        {{#each resaults}}
+        <tr>
+            <td style="font-size: 12px;">{{this._id}}</td>
+            <td style="font-size: 12px;">{{this.date}}</td>
+            <td>{{this.staffId.name}}</td>
+            <td>{{this.branchId.state}}</td>
+            <td>{{this.amt}}</td>
+            <td>{{this.total}}</td>
+        </tr> 
+        {{/each}}
+        {{/if}}
+    </table>
+ </div>
+<div class="add">
+<a href="/addSalary" class="addButton"><i class="fa-solid fa-plus"></i> Add New Salary</a>
+<a href="" onclick="window.print()" class="print">View Report <i class="fa-solid fa-arrow-right"></i></a>
+</div>

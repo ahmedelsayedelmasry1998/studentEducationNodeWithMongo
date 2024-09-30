@@ -1,0 +1,74 @@
+
+<h2>Manage Student</h2>
+<div class="addRow">
+    <form action="" method="post" enctype="multipart/form-data">
+        <div class="row">
+            <span>Photo</span>
+            <input type="file" name="photo">
+        </div>
+        <div class="row">
+            <span>Name</span>
+            <input type="text" name="name" />
+        </div>
+        <div class="row">
+            <span>Father Name</span>
+            <input type="text" name="fatherName" />
+        </div>
+        <div class="row">
+            <span>Mother Name</span>
+            <input type="text" name="motherName" />
+        </div>
+        <div class="row">
+            <span>Sex</span>
+            <select name="sex" id="">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <div class="row">
+            <span>Phone</span>
+            <input type="text" name="phone" />
+        </div>
+        <div class="row">
+            <span>Email</span>
+            <input type="email" name="email" />
+        </div>
+        <div class="row">
+            <span>Password</span>
+            <input type="password" name="password" />
+        </div>
+        <div class="row">
+            <span>Std</span>
+            <input type="text" name="std" />
+        </div>
+        <div class="row">
+            <span>Address</span>
+            <input type="text" name="address" />
+        </div>
+        <div class="row">
+            <span>State</span>
+            <input type="text" name="state" />
+        </div>
+        <div class="row">
+            <span>City</span>
+            <input type="text" name="city" />
+        </div>
+        <div class="row">
+            <span>Total Fee</span>
+            <input type="number" name="totalFee" />
+        </div>
+        <div class="row">
+            <span>Paid Fee</span>
+            <input type="number" name="paidFee" />
+        </div>
+        <div class="row">
+            <span>Branches</span>
+            <select name="branchId" id="">
+               {{#each branches}}
+               <option value="{{this._id}}">{{this.state}}</option>
+               {{/each}}
+            </select>
+        </div>
+        <input type="submit" value="Save Student" class="">
+    </form>
+</div>

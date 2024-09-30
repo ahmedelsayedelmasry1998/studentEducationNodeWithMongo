@@ -1,0 +1,895 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "SUSE-Regular";
+  src: url("/fonts/NewAmsterdam-Regular.ttf");
+}
+
+@font-face {
+  font-family: "NewAmsterdam-Regular";
+  src: url("/fonts/NewAmsterdam-Regular.ttf");
+}
+
+:root {
+  --main-font: "NewAmsterdam-Regular";
+  --sub-font: "SUSE-Regular";
+  --header-color: #343A40;
+  --footer-color: #343A40;
+}
+
+div.mainContainer {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 50px auto 250px;
+}
+
+div.mainContainer header {
+  background-color: var(--header-color);
+  display: flex;
+  font-family: var(--main-font);
+  justify-content: space-evenly;
+  line-height: 50px;
+  z-index: 999;
+  overflow: visible;
+  color: white;
+  font-family: var(--main-font);
+}
+
+div.mainContainer header div.logo {
+  width: 10%;
+}
+
+div.mainContainer header div.logo img {
+  height: 100%;
+  width: 80%;
+  padding: 5px;
+}
+
+div.mainContainer header div.actions {
+  width: 50%;
+  height: 100%;
+}
+
+div.mainContainer header div.actions ul.mainUl {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+}
+
+div.mainContainer header div.actions ul.mainUl li {
+  width: 33.3%;
+  cursor: pointer;
+}
+div.mainContainer header div.actions ul.mainUl li a{
+ color: white !important;
+ text-decoration: none;
+}
+
+div.mainContainer header div.login {
+  width: 20%;
+  text-align: center;
+}
+
+div.mainContainer header div.login>ul {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+div.mainContainer header div.login>ul li ul {
+  list-style-type: none;
+  width: 90% !important;
+  text-align: left !important;
+}
+
+div.mainContainer header div.login>ul li ul li {
+  background-color: gray;
+  text-align: center !important;
+  cursor: pointer;
+  border-bottom: 1px solid white;
+  transition: all 0.3s linear;
+}
+
+div.mainContainer header div.login>ul li ul li:hover {
+  background-color: darkgoldenrod;
+}
+
+div.mainContainer header div.regastration {
+  width: 20%;
+  text-align: right;
+  padding-right: 20px;
+  font-family: var(--sub-font);
+}
+
+div.mainContainer header div.regastration a {
+  color: gray;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+@media (max-width:950px) {
+  div.mainContainer header div.login {
+      width: 30%;
+      text-align: center;
+  }
+
+  div.mainContainer header div.actions {
+      width: 40%;
+      text-align: center;
+  }
+}
+
+@media (max-width:700px) {
+  div.mainContainer header div.logo {
+      width: 10%;
+  }
+
+  div.mainContainer header div.actions {
+      width: 40%;
+      font-size: 14px !important;
+  }
+
+  div.mainContainer header div.login {
+      width: 35%;
+      text-align: center;
+      font-size: 14px !important;
+  }
+
+  div.mainContainer header div.regastration {
+      width: 12%;
+  }
+
+  div.mainContainer header div.regastration a {
+      font-size: 14px;
+  }
+}
+
+@media (max-width:550px) {
+  div.mainContainer header div.actions {
+      font-size: 10px !important;
+  }
+
+  div.mainContainer header div.login {
+      font-size: 10px !important;
+  }
+
+  div.mainContainer header div.regastration a {
+      font-size: 10px;
+  }
+}
+
+@media (max-width:425px) {
+  div.mainContainer header div.actions {
+      font-size: 8px !important;
+  }
+
+  div.mainContainer header div.login {
+      font-size: 8px !important;
+  }
+
+  div.mainContainer header div.regastration a {
+      font-size: 8px;
+  }
+
+  div.mainContainer header div.login>ul li ul {
+      width: 100% !important;
+  }
+
+}
+
+@media (max-width:350px) {
+  div.mainContainer header div.actions {
+      font-size: 7px !important;
+  }
+
+  div.mainContainer header div.login {
+      font-size: 7px !important;
+  }
+
+  div.mainContainer header div.regastration a {
+      font-size: 7px;
+  }
+
+  div.mainContainer header div.login>ul li ul {
+      width: 85% !important;
+      font-size: 6px;
+  }
+}
+
+div.mainContainer div.content {
+  font-family: var(--sub-font);
+}
+
+div.mainContainer div.content div.cours {
+  height: 500px !important;
+}
+
+div.mainContainer div.content div.cours img {
+  height: 500px !important;
+}
+
+div.mainContainer div.content div.info {
+  width: 90%;
+  margin: 5% auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div.mainContainer div.content div.info div.component {
+  width: 32%;
+}
+
+div.mainContainer div.content div.info div.component img {
+  border-radius: 50%;
+  width: 50% !important;
+  margin: 0px auto;
+}
+
+div.mainContainer div.content div.info div.component h2 {
+  color: gray;
+  font-family: var(--main-font);
+}
+
+div.mainContainer div.content div.info div.component h4 {
+  color: gray;
+  font-family: var(--sub-font);
+  font-size: 18px;
+}
+
+div.mainContainer div.content div.info div.component ul li {
+  font-family: var(--sub-font);
+}
+
+div.mainContainer div.content div.info div.component ul li p {
+  color: gray;
+}
+
+div.mainContainer div.content div.info div.component h3 {
+  font-size: 15px;
+}
+
+div.mainContainer div.content div.info div.component ul {
+  list-style-type: circle;
+}
+
+div.mainContainer div.content div.info div.component a.viewBtn {
+  background-color: #ccc;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+}
+
+div.mainContainer div.content div.info div.component a.viewBtn:hover {
+  background-color: gray;
+}
+
+@media(max-width:768px) {
+  div.mainContainer div.content div.info {
+      flex-wrap: wrap;
+      justify-content: start;
+  }
+
+  div.mainContainer div.content div.info div.component {
+      width: 50%;
+      margin-bottom: 5%;
+  }
+}
+
+@media(max-width:600px) {
+  div.mainContainer div.content div.info {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  div.mainContainer div.content div.info div.component {
+      width: 80%;
+      margin-bottom: 5%;
+  }
+}
+
+div.mainContainer div.content div.admin {
+  width: 90%;
+  margin: 5% auto;
+  display: flex;
+}
+
+div.mainContainer div.content div.admin div.information {
+  width: 60%;
+}
+
+div.mainContainer div.content div.admin div.information h2 {
+  font-family: var(--main-font);
+  color: gray;
+  font-size: 25px;
+}
+
+div.mainContainer div.content div.admin div.information p {
+  font-family: var(--sub-font);
+  font-size: 20px;
+  padding: 10px;
+  text-align: justify;
+}
+
+div.mainContainer div.content div.admin div.photo {
+  width: 40%;
+}
+
+div.mainContainer div.content div.admin div.photo img {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  opacity: 0.7;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+div.mainContainer div.content div.admin div.photo img:hover {
+  opacity: 1;
+}
+
+@media (max-width : 768px) {
+  div.mainContainer div.content div.admin {
+      width: 90%;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  div.mainContainer div.content div.admin div {
+      width: 100% !important;
+  }
+}
+
+@media (max-width : 425px) {
+  div.mainContainer div.content div.admin div.information h2 {
+      font-size: 20px;
+  }
+
+  div.mainContainer div.content div.admin div.information p {
+      font-size: 17px;
+  }
+}
+
+div.mainContainer div.content div.teatcher {
+  width: 90%;
+  margin: 5% auto;
+  display: flex;
+}
+
+div.mainContainer div.content div.teatcher div.information {
+  width: 60%;
+}
+
+div.mainContainer div.content div.teatcher div.information h2 {
+  font-family: var(--main-font);
+  color: gray;
+  font-size: 25px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+div.mainContainer div.content div.teatcher div.information p {
+  font-family: var(--sub-font);
+  font-size: 20px;
+  padding: 10px;
+  text-align: justify;
+}
+
+div.mainContainer div.content div.teatcher div.photo {
+  width: 40%;
+}
+
+div.mainContainer div.content div.teatcher div.photo img {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  opacity: 0.7;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+div.mainContainer div.content div.teatcher div.photo img:hover {
+  opacity: 1;
+}
+
+@media (max-width : 768px) {
+  div.mainContainer div.content div.teatcher {
+      width: 90%;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  div.mainContainer div.content div.teatcher div {
+      width: 100% !important;
+  }
+}
+
+@media (max-width : 425px) {
+  div.mainContainer div.content div.teatcher div.information h2 {
+      font-size: 20px;
+  }
+
+  div.mainContainer div.content div.teatcher div.information p {
+      font-size: 17px;
+  }
+}
+
+div.mainContainer div.content div.student {
+  width: 90%;
+  margin: 5% auto;
+  display: flex;
+}
+
+div.mainContainer div.content div.student div.information {
+  width: 60%;
+}
+
+div.mainContainer div.content div.student div.information h2 {
+  font-family: var(--main-font);
+  color: gray;
+  font-size: 25px;
+}
+
+div.mainContainer div.content div.student div.information p {
+  font-family: var(--sub-font);
+  font-size: 20px;
+  padding: 10px;
+  text-align: justify;
+}
+
+div.mainContainer div.content div.student div.photo {
+  width: 40%;
+}
+
+div.mainContainer div.content div.student div.photo img {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  opacity: 0.7;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+div.mainContainer div.content div.student div.photo img:hover {
+  opacity: 1;
+}
+
+@media (max-width : 768px) {
+  div.mainContainer div.content div.student {
+      width: 90%;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  div.mainContainer div.content div.student div {
+      width: 100% !important;
+  }
+}
+
+@media (max-width : 425px) {
+  div.mainContainer div.content div.student div.information h2 {
+      font-size: 20px;
+  }
+
+  div.mainContainer div.content div.student div.information p {
+      font-size: 17px;
+  }
+}
+
+div.mainContainer div.content div.divider {
+  width: 90%;
+  margin: 1% auto;
+}
+
+div.mainContainer div.content div.divider hr {
+  color: black !important;
+  opacity: 0.8;
+}
+
+div.mainContainer footer {
+  background-color: var(--header-color);
+}
+
+div.mainContainer footer div.textSocial {
+  width: 90%;
+  margin: 15px auto;
+  display: flex;
+  color: burlywood;
+  font-family: var(--main-font);
+}
+
+div.mainContainer footer div.textSocial div {
+  width: 25%;
+}
+
+div.mainContainer footer div.textSocial div h3 {
+  color: white;
+}
+
+div.mainContainer footer div.textSocial div a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  background-color: gray;
+  transition: all 0.3s ease;
+}
+
+div.mainContainer footer div.textSocial div ul {
+  list-style-type: circle;
+}
+
+div.mainContainer footer div.textSocial div a:hover {
+  background-color: #DDD;
+  color: black;
+}
+
+div.mainContainer footer div.photoSocial {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+div.mainContainer footer div.textSocial ul li:hover{
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width:900px) {
+  div.mainContainer footer div.textSocial div h3 {
+      font-size: 12px !important;
+  }
+
+  div.mainContainer footer div.textSocial {
+      font-size: 12px !important;
+  }
+}
+
+@media (max-width:600px) {
+  div.mainContainer footer div.textSocial div h3 {
+      font-size: 10px !important;
+  }
+
+  div.mainContainer footer div.textSocial {
+      font-size: 10px !important;
+  }
+
+  div.mainContainer footer div.textSocial div h6 {
+      font-size: 10px !important;
+  }
+}
+
+@media (max-width:500px) {
+  div.mainContainer footer div.textSocial {
+     flex-wrap: wrap;
+     justify-content: space-between;
+  }
+  
+  div.mainContainer footer div.textSocial div {
+      width: 50%;
+  }
+  div.mainContainer footer div.photoSocial {
+     font-size: 14px !important;
+  }
+}
+@media (max-width:350px) {
+  div.mainContainer footer div.photoSocial {
+     font-size: 12px !important;
+  }
+}
+
+.h-s {
+  display: none;
+}
+.error{
+  text-align: center;
+  color: red;
+  font-family: var(--sub-font);
+  padding-bottom: 20px;
+}
+/*Aboutus Page*/
+div.mainContainer div.content{
+  font-family: var(--sub-font) !important;
+}
+div.mainContainer div.content h2{
+  text-align: center !important;
+  color: black;
+  margin-top: 3%;
+  font-size: 25px;
+}
+div.mainContainer div.content div.developers {
+display: flex;
+justify-content: space-between;
+margin: 5% auto;
+width:90%;
+flex-wrap: wrap;
+}
+div.mainContainer div.content div.developers div{
+width: 30%;
+font-size: var(--sub-font);
+text-align: center;
+margin-bottom: 3%;
+padding-top: 15px;
+box-shadow: 1px 1px 10px black;
+}
+div.mainContainer div.content div.developers div img{
+width: 60% !important;
+height: 300px !important;
+cursor: pointer;
+display: block;
+margin: 0px auto;
+border-radius: 5px;
+border: 1px solid grey;
+opacity: 0.8;
+transition: all 0.3s linear;
+}
+div.mainContainer div.content div.developers div img:hover{
+opacity: 1;
+}
+div.mainContainer div.content div.developers div h3{
+color: gray;
+margin-top: 15px;
+margin-bottom: 10px;
+}
+@media(max-width:768px)
+{
+  div.mainContainer div.content div.developers {
+     flex-wrap: wrap;
+      }
+  div.mainContainer div.content div.developers div{
+     width: 48%;
+      }
+}
+@media(max-width:425px)
+{
+  div.mainContainer div.content div.developers {
+     flex-direction: column;
+      }
+  div.mainContainer div.content div.developers div{
+     width: 100%;
+      }
+      div.mainContainer div.content div.developers div img{
+         width: 90% !important;
+          }
+}
+/*Aboutus Page*/
+/*Contact us Page*/
+div.mainContainer div.content div.contacts{
+  width: 90%;
+  margin: 5% auto;
+  display: flex;
+  font-family: var(--main-font);
+  justify-content: space-evenly;
+}
+div.mainContainer div.content div.contacts div{
+  width: 45%;
+} 
+div.mainContainer div.content div.contacts div.forms form div{
+  width: 10%;
+  background-color: #EEE;
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+} 
+div.mainContainer div.content div.contacts div.forms form input{
+  width: 90%;
+  text-align: center;
+  padding: 3px;
+  outline: none;
+  border: 1px solid #ccc;
+  margin-bottom: 3%;
+} 
+.btnSend{
+  width: 100% !important;
+  background-color: green;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+  transition: all 0.3s ease;
+  padding: 5px 10px;
+}
+.btnSend:hover{
+  background-color: gray;
+}
+div.mainContainer div.content div.contacts div.socials{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 20px;
+  font-family: var(--sub-font);
+}
+div.mainContainer div.content div.contacts div.socials div.first{
+  display: flex;
+  justify-content: space-between;
+}
+div.mainContainer div.content div.contacts div.socials div.first div.desc{
+  width: 80%;
+  color: gray;
+}
+div.mainContainer div.content div.contacts div.socials div.first div.icon{
+  width: 20%;
+  color: green;
+}
+hr{
+  opacity: 1;
+  color: grey;
+  width: 256px;
+}
+div.mainContainer div.content div.contacts div.socials div.second{
+  display: flex;
+  justify-content:space-evenly ;
+}
+div.mainContainer div.content div.contacts div.socials div.second div{
+  width: 20%;
+  background-color: grey;
+  text-align: center;
+  padding:10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+}
+div.mainContainer div.content div.contacts div.socials div.second div svg{
+  font-size: 25px;
+  transition: all 0.3s linear;
+}
+div.mainContainer div.content div.contacts div.socials div.second div:hover{
+ color: black;
+}
+@media (max-width:1200px)
+{
+  div.mainContainer div.content div.contacts{
+     flex-direction: column;
+     align-items: center;
+  }
+  div.mainContainer div.content div.contacts div{
+      width: 60%;
+  } 
+}
+@media (max-width:700px)
+{
+  div.mainContainer div.content div.contacts div{
+      width: 80%;
+  } 
+}
+@media (max-width:425px)
+{
+  div.mainContainer div.content div.contacts div{
+      width: 90%;
+  } 
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+/*Contact us Page*/
+/*Admin Login Page*/
+div.mainContainer div.content div.loginForm{
+  width: 60%;
+  margin: 5% auto;
+  text-align: center;
+}
+div.mainContainer div.content div.loginForm input{
+  border-radius: 5px;
+  width: 60%;
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  text-align: center;
+  font-family: var(--main-font);
+  margin-bottom: 3%;
+}
+div.mainContainer div.content div.loginForm input:hover{
+  outline: 2px solid #ccc;
+}
+div.mainContainer div.content div.loginForm input[type="submit"]{
+  outline: none;
+  border: 0px;
+  background-color: green;
+  transition: all 0.3s ease-in-out;
+  color: white;
+  font-size: 22px;
+}
+div.mainContainer div.content div.loginForm input[type="submit"]:hover{
+  background-color: grey;
+}
+div.mainContainer div.content div.loginForm img{
+  height: 200px;
+  margin-bottom: 2%;
+  margin-top: -6% !important;
+}
+@media (max-width:1100px)
+{
+  div.mainContainer div.content div.loginForm input{
+      width: 80%;
+  }
+}
+@media (max-width:768px)
+{
+  div.mainContainer div.content div.loginForm input{
+      width: 100%;
+  }
+}
+@media (max-width:550px)
+{
+  div.mainContainer div.content div.loginForm{
+      width: 80%;
+  }
+}
+@media (max-width:375px)
+{
+  div.mainContainer div.content div.loginForm{
+      width: 90%;
+  }
+}
+/*Admin Login Page*/
+/*Sign Up Page*/
+div.mainContainer div.content div.rigaster{
+  display: flex;
+  width: 90%;
+  margin: 3% auto;
+  font-family: var(--main-font);
+  justify-content: space-between;
+}
+div.mainContainer div.content div.rigaster div.loginDiv{
+  width: 30%;
+}
+div.mainContainer div.content div.rigaster div.loginDiv h3{
+  text-align: center;
+}
+div.mainContainer div.content div.rigaster div.loginDiv p{
+  text-align: justify;
+}
+div.mainContainer div.content div.rigaster div.registarDiv{
+  width: 60%;
+}
+.btnLogin{
+  padding: 5px 10px;
+  color: white;
+  background-color: grey;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+  border: 0px;
+  outline: none !important;
+}
+.btnLogin:hover{
+  background-color: green;
+}
+div.mainContainer div.content div.rigaster div.registarDiv input,div.mainContainer div.content div.rigaster div.registarDiv select{
+ width: 80%;
+ display: block;
+ margin: 5px auto;
+ padding: 5px 10px;
+ outline: none;
+ text-align: center;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+}
+div.mainContainer div.content div.rigaster div.registarDiv input:hover{
+  outline: 2px solid #ccc;
+}
+div.mainContainer div.content div.rigaster div.registarDiv select:hover{
+  outline: 2px solid #ccc;
+}
+@media(max-width:768px)
+{
+  div.mainContainer div.content div.rigaster{
+     flex-direction: column;
+     align-items: center;
+  }
+  div.mainContainer div.content div.rigaster div.loginDiv{
+      width: 90%;
+      margin-bottom: 5%;
+  }
+  div.mainContainer div.content div.rigaster div.registarDiv{
+      width: 90%;
+  }
+  div.mainContainer div.content div.rigaster div.registarDiv input,div.mainContainer div.content div.rigaster div.registarDiv select{
+      width: 100%;
+   }
+}
+/*Sign Up Page*/

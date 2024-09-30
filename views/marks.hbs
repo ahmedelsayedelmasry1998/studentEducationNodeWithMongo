@@ -1,0 +1,42 @@
+
+ <h2>Marks</h2>
+ <div class="manage">
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>ENG</th>
+            <th>GRAMER</th>
+            <th>MATHS</th>
+            <th>SCI</th>
+            <th>SS</th>
+            <th>ENV</th>
+            <th>G.K</th>
+            <th>HINDI</th>
+            <th>COMPUTER</th>
+            <th>GUJ</th>
+        </tr>
+        {{#if marks}}
+        {{#each marks}}
+        <tr>
+            <td style="font-size: 9px;">{{this._id}}</td>
+            <td style="font-size: 15px;">{{this.studentId.name}}</td>
+            <td>{{this.eng1}}</td>
+            <td>{{this.gramer}}</td>
+            <td>{{this.maths}}</td>
+            <td>{{this.sci}}</td>
+            <td>{{this.ss}}</td>
+            <td>{{this.env}}</td>
+            <td>{{this.gk}}</td>
+            <td>{{this.hindi}}</td>
+            <td>{{this.computer}}</td>
+            <td>{{this.guj}}</td>
+        </tr> 
+        {{/each}}
+        {{/if}}
+    </table>
+ </div>
+<div class="add">
+<a href="/addMark" class="addButton"><i class="fa-solid fa-plus"></i> Add New Mark</a>
+<a href="#"  onclick="window.print();"  class="print"><i class="fa-solid fa-print"></i> Print Marks</a>
+</div>

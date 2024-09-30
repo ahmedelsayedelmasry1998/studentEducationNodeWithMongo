@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "66d9e18b093d409e7890c99c"
+  },
+  "fName": "Mohamed",
+  "lName": "Elmasry",
+  "address": "Cairo",
+  "email": "www.mohamed@gmail.com",
+  "phone": "01064907346",
+  "password": "12345",
+  "tutionId": {
+    "$oid": "66d9e18a093d409e7890c999"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66d9e2ef08e511017066eede"
+  },
+  "fName": "Ahmed",
+  "lName": "Elmasry",
+  "address": "alex",
+  "email": "www.ahmed@gmail.com",
+  "phone": "01064907348",
+  "password": "12345",
+  "tutionId": {
+    "$oid": "66d9e18a093d409e7890c999"
+  },
+  "__v": 0
+}]

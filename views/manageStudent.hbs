@@ -1,0 +1,41 @@
+<h2>Manage Student</h2>
+ <div class="manage">
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Photo</th>
+            <th>Std</th>
+            <th>Branch</th>
+            <th>Phone No.</th>
+            <th>Total Fee</th>
+            <th>Paid Fee</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        {{#if students}}
+          {{#each students}}
+           <tr></tr>
+            <td style="font-size: 10px;">{{this._id}}</td>
+            <td>{{this.name}}</td>
+            <td><img src="{{this.photo}}" alt=""></td>
+            <td>{{this.std}}</td>
+            <td>{{this.branchId.city}}</td>
+            <td>{{this.phone}}</td>
+            <td>{{this.totalFees}}</td>
+            <td>{{this.paidFees}}</td>
+            <td>
+                <a href="/updateStudent/{{this._id}}" class="editButton">Edit <i class="fa-solid fa-pen-to-square"></i></a>
+            </td>
+            <td>
+                <a href="/deleteStudent/{{this._id}}" class="deleteButton">Delete <i class="fa-solid fa-trash"></i></a>
+            </td>
+        </tr>
+        {{/each}}
+        {{/if}}
+      
+    </table>
+ </div>
+<div class="add">
+<a href="/addStudent" class="addButton"><i class="fa-solid fa-plus"></i> Add New Student</a>
+</div>

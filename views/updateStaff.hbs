@@ -1,0 +1,82 @@
+
+<h2>Manage Staff</h2>
+<div class="addRow">
+    <form action="/updateStaff" method="post">
+        <div class="row">
+            <span>Name</span>
+            <input type="text" name="name" value="{{staff.name}}" />
+            <input type="hidden" name="staffId" value="{{staff._id}}" />
+        </div>
+        <div class="row">
+            <span>Middle Name</span>
+            <input type="text" name="middleName" value="{{staff.middleName}}"/>
+        </div>
+        <div class="row">
+            <span>Phone</span>
+            <input type="text" name="phone" value="{{staff.phone}}"/>
+        </div>
+        <div class="row">
+            <span>Sex</span>
+            <select name="sex" id="">
+                {{#if male}}
+                <option selected value="male">Male</option>
+                <option value="female">Female</option>
+                {{/if}}
+                {{#if female}}
+                <option  value="male">Male</option>
+                <option selected value="female">Female</option>
+                {{/if}}
+                
+            </select>
+        </div>
+        <div class="row">
+            <span>Email</span>
+            <input type="email" name="email" value="{{staff.email}}" />
+        </div>
+        <div class="row">
+            <span>Password</span>
+            <input type="password" name="password" value="{{staff.password}}" />
+        </div>
+        <div class="row">
+            <span>Qualication</span>
+            <input type="text" name="qualifaction" value="{{staff.qualifaction}}"/>
+        </div>
+        <div class="row">
+            <span>Total Salary</span>
+            <input type="number" name="totalSalary" value="{{staff.totalSalary}}" />
+        </div>
+        <div class="row">
+            <span>Paid Salary</span>
+            <input type="number" name="paidSalary" value="{{staff.paidSalary}}" />
+        </div>
+        <div class="row">
+            <span>Exp</span>
+            <input type="text" name="exp" value="{{staff.exp}}"/>
+        </div>
+        <div class="row">
+            <span>Address</span>
+            <input type="text" name="address" value="{{staff.address}}"/>
+        </div>
+        <div class="row">
+            <span>State</span>
+            <input type="text" name="state" value="{{staff.state}}"/>
+        </div>
+        <div class="row">
+            <span>City</span>
+            <input type="text" name="city" value="{{staff.city}}"/>
+        </div>
+        <div class="row">
+            <span>Type</span>
+            <input type="text" name="type" value="{{staff.type}}"/>
+        </div>
+        <div class="row">
+            <span>Branches</span>
+            <select name="branchId" id="">
+                {{#each branches}}
+                          <option value="{{this._id}}">{{this.state}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <input type="submit" value="Update Staff" class="">
+    </form>
+</div>

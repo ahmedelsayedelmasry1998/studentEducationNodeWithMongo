@@ -1,0 +1,56 @@
+<h2>Marks</h2>
+<div class="addRow">
+    <form action="/addMark" method="post">
+        <div class="row">
+            <span>English</span>
+            <input type="number" name="eng">
+        </div>
+        <div class="row">
+            <span>Gramer</span>
+            <input type="number" name="gramer">
+        </div>
+        <div class="row">
+            <span>Maths</span>
+            <input type="number" name="maths">
+        </div>
+        <div class="row">
+            <span>Sci</span>
+            <input type="number" name="sci">
+        </div>
+        <div class="row">
+            <span>Ss</span>
+            <input type="number" name="ss">
+        </div>
+        <div class="row">
+            <span>Env</span>
+            <input type="number" name="env">
+        </div>
+        <div class="row">
+            <span>Gk</span>
+            <input type="number" name="gk">
+        </div>
+        <div class="row">
+            <span>Hindi</span>
+            <input type="number" name="hindi">
+        </div>
+        <div class="row">
+            <span>Computer</span>
+            <input type="number" name="computer">
+        </div>
+        <div class="row">
+            <span>Guj</span>
+            <input type="number" name="guj">
+        </div>
+        <div class="row">
+            <span>Students</span>
+            <select name="studentId" id="">
+             {{#if students}}
+             {{#each students}}
+               <option value="{{this._id}}">{{this.name}}</option>
+             {{/each}}
+             {{/if}}
+            </select>
+        </div>
+        <input type="submit" value="Save Mark" class="">
+    </form>
+</div>

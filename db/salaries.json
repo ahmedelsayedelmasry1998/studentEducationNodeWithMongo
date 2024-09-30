@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "66f04fecb6aedf73484d79f3"
+  },
+  "date": {
+    "$date": "2019-09-10T00:00:00.000Z"
+  },
+  "amt": 111,
+  "total": 111000,
+  "tutionId": {
+    "$oid": "66d9e18a093d409e7890c999"
+  },
+  "staffId": {
+    "$oid": "66e387437936da269dbdf134"
+  },
+  "branchId": {
+    "$oid": "66dde9343e0444f35cd3ac04"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66f05028b6aedf73484d79f7"
+  },
+  "date": {
+    "$date": "2024-09-04T00:00:00.000Z"
+  },
+  "amt": 222,
+  "total": 222000,
+  "tutionId": {
+    "$oid": "66d9e18a093d409e7890c999"
+  },
+  "staffId": {
+    "$oid": "66e387437936da269dbdf134"
+  },
+  "branchId": {
+    "$oid": "66dde56b8ce2b76d854c86a8"
+  },
+  "__v": 0
+}]

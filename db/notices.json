@@ -1,0 +1,54 @@
+[{
+  "_id": {
+    "$oid": "66fafe86697a07fa01bc37c9"
+  },
+  "noticeHead": "Notice 1",
+  "noticeBody": "This is notice one",
+  "recipient": "all",
+  "tutionId": {
+    "$oid": "66d9e18a093d409e7890c999"
+  },
+  "date": {
+    "$date": "2024-09-30T19:39:50.783Z"
+  },
+  "time": {
+    "$date": "2024-09-30T19:39:50.783Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fafea7697a07fa01bc37d4"
+  },
+  "noticeHead": "Notice 2",
+  "noticeBody": "This is notice two",
+  "recipient": "studient",
+  "tutionId": {
+    "$oid": "66d9e18a093d409e7890c999"
+  },
+  "date": {
+    "$date": "2024-09-30T19:40:23.371Z"
+  },
+  "time": {
+    "$date": "2024-09-30T19:40:23.371Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66fafeb5697a07fa01bc37df"
+  },
+  "noticeHead": "Notice 3",
+  "noticeBody": "This is notice three",
+  "recipient": "staff",
+  "tutionId": {
+    "$oid": "66d9e18a093d409e7890c999"
+  },
+  "date": {
+    "$date": "2024-09-30T19:40:37.350Z"
+  },
+  "time": {
+    "$date": "2024-09-30T19:40:37.350Z"
+  },
+  "__v": 0
+}]

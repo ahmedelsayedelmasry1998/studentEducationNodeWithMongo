@@ -1,0 +1,70 @@
+<h2>Dashboard</h2>
+ <div class="chart">
+     <div>
+         <canvas id="myChart"></canvas>
+     </div>
+ </div>
+ <div style="display: none;" class="contentChart">
+     <div id="w1" style="visibility: hidden;">
+       {{branchesCount}}
+     </div>
+     <div id="w2" style="visibility: hidden;">
+        {{studentCount}}
+     </div>
+     <div id="w3" style="visibility: hidden;">
+      {{staffCount}}
+     </div>
+     <div id="w4" style="visibility: hidden;">
+         {{expensesCount}}
+     </div>
+     <div id="w5" style="visibility: hidden;">
+        {{passCount}}
+     </div>
+     <div id="w6" style="visibility: hidden;">
+         {{failCount}}
+     </div>
+     <div id="w7" style="visibility: hidden;">
+         {{feesCount}}
+     </div>
+     <div id="w8" style="visibility: hidden;">
+         {{salaries}}
+     </div>
+     <div id="w9" style="visibility: hidden;">
+        {{tutions}}
+     </div>
+ </div>
+  <div class="notice">
+     <h3>Notice Board</h3>
+     <form action="/addNotice" method="post">
+         <input name="noticeTitle" type="text" placeholder="Please Enter Notice Title ...">
+         <textarea rows="8" name="noticeBody" id="" placeholder="Please Enter Notice Body ..."></textarea>
+         <input value="staff" type="radio" name="recipient" id="staff"><label for="staff"> &nbsp; To Staff</label>
+         <input value="studient" type="radio" name="recipient" id="studient"><label for="studient"> &nbsp; To Studient</label>
+         <input value="all" checked type="radio" name="recipient" id="all"><label for="all"> &nbsp; To All</label>
+         <input type="reset" class="btnClear" value="Clear">
+         <input type="submit" class="btnSend" value="Send">
+     </form>
+ </div>
+ <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ <script>
+     const ctx = document.getElementById('myChart');
+
+     new Chart(ctx, {
+         type: 'doughnut', //doughnut,pie
+         data: {
+             labels: ['Total Branches', 'Total Students', 'Total Staffs', 'Total Expenses', 'Total Pass', 'Total Fail', 'Total Fees', 'Total Salary', 'Total Tutions'],
+             datasets: [{
+                 label: 'E Commerce Shop',
+                 data: [document.getElementById("w1").innerHTML, document.getElementById("w2").innerHTML, document.getElementById("w3").innerHTML, document.getElementById("w4").innerHTML, document.getElementById("w5").innerHTML, document.getElementById("w6").innerHTML,document.getElementById("w7").innerHTML,document.getElementById("w8").innerHTML,document.getElementById("w9").innerHTML ],
+                 borderWidth: 3
+             }]
+         },
+         options: {
+             scales: {
+                 y: {
+                     beginAtZero: false
+                 }
+             }
+         }
+     });
+ </script>

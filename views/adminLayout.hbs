@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Education</title>
+    <link rel="stylesheet" href=".\bower_components\bootstrap\dist\css\bootstrap.css">
+    <link rel="stylesheet" href=".\stylesheets\adminStyle.css">
+</head>
+
+<body>
+
+       <div class="mainContainer">
+        <div class="links">
+            <h2>Studient Education</h2>
+            <ul>
+                <li><a href="/dashboard"><i class="fa-solid fa-gauge"></i> &nbsp;Dashboard</a></li>
+                <li><a href="/manageBranch"><i class="fa-solid fa-hat-cowboy"></i> &nbsp;Manage Branch</a></li>
+                <li><a href="/manageStudent"><i class="fa-solid fa-graduation-cap"></i> &nbsp;Manage Student</a></li>
+                <li><a href="/manageStaff"><i class="fa-solid fa-clipboard-user"></i> &nbsp;Manage Staff</a></li>
+                <li><a href="/manageExpenses"><i class="fa-solid fa-money-bill-1-wave"></i> &nbsp;Manage Expenses</a></li>
+                <li><a href="/attendense"><i class="fa-solid fa-money-check-dollar"></i> &nbsp;Attendense</a></li>
+                <li><a href="/marks"><i class="fa-solid fa-marker"></i> &nbsp;Marks</a></li>
+                <li><a href="/fees"><i class="fa-solid fa-rss"></i> &nbsp;Fees</a></li>
+                <li><a href="/salary"><i class="fa-solid fa-sack-dollar"></i> &nbsp;Salary</a></li>
+                <li><a href="/reports"><i class="fa-solid fa-chart-column"></i> &nbsp;Report</a></li>
+                <li><a href="/profile"><i class="fa-solid fa-user"></i> &nbsp;Profile</a></li>
+                <li><a href="/logout"><i class="fa-solid fa-arrow-right-from-bracket"></i> &nbsp;Logout</a></li>
+            </ul>
+        </div>
+        <div class="contents">
+            <header>
+                <div class="logo">
+                    <img src="./images/TMS_logo.png" alt="">
+                </div>
+                <div class="regastration">
+                    <a href="#">
+                        {{#if adminEmail}}
+                        {{adminEmail}}
+                        {{/if}}
+                    </a>
+                </div>
+            </header>
+            <div class="content">
+            {{{body}}}
+            <script src=".\javascripts\all.js"></script>
+            <script src=".\bower_components\bootstrap\dist\js\bootstrap.js"></script>
+            <script src=".\javascripts\adminMain.js"></script>
+    </div>
+            <footer>
+                <div class="textSocial">
+                    <div>
+                        <h3>TMS</h3>
+                        <h6>Join TMS to manage the details profesionally</h6>
+                        <a class="signUp" href="/signUp">Sign Up</a>
+                    </div>
+                    <div>
+                        <h3>QUICK LINKS</h3>
+                        <ul>
+                            <li>Home</li>
+                            <li>About Us</li>
+                            <li>Contact Us</li>
+                            <li>Help</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>HAVE A QUESTION?</h3>
+                        <ul>
+                            <li><i class="fa-solid fa-location-dot"></i> Suart / Juajarat</li>
+                            <li><i class="fa-solid fa-phone"></i> +090 125 452 00</li>
+                            <li><i class="fa-regular fa-envelope"></i> tms@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#up"> Back To Up <i class="fa-solid fa-arrow-up"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="photoSocial">
+                    © 2019 | All Rights Reserved.
+                    Powered by TMS.com
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

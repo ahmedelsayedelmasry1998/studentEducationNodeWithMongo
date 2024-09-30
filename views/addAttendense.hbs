@@ -1,0 +1,34 @@
+<h2>Attendense</h2>
+<div class="addRow">
+    <form action="" method="post">
+        <div class="row">
+            <span>Date</span>
+            <input type="date" name="customDate">
+        </div>
+        <div class="row">
+            <span>Attendense</span>
+            <select name="attendense" id="">
+                <option value="0">Pass</option>
+                <option value="1">Fail</option>
+            </select>
+        </div>
+        <div class="row">
+            <span>Type</span>
+            <select name="type" id="">
+                <option value="student">Student</option>
+                <option value="staff">Staff</option>
+            </select>
+        </div>
+        <div class="row">
+            <span>Students</span>
+            <select name="studentId" id="">
+                {{#if students}}
+                {{#each students}}
+                <option value="{{this._id}}">{{this.name}}</option>
+                {{/each}}
+                {{/if}}
+            </select>
+        </div>
+        <input type="submit" value="Save Attendense" class="">
+    </form>
+</div>

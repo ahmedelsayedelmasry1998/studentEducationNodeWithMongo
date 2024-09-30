@@ -1,0 +1,29 @@
+
+<h2>Manage Expenses</h2>
+<div class="addRow">
+    <form action="" method="post">
+        <div class="row">
+            <span>Expenses</span>
+            <input type="text" name="expenses" />
+        </div>
+        <div class="row">
+            <span>Amount</span>
+            <input type="number" name="amount" />
+        </div>
+        <div class="row">
+            <span>Remark</span>
+            <input type="text" name="remark" />
+        </div>
+        <div class="row">
+            <span>Branches</span>
+            <select name="branchId" id="">
+                {{#if branches}}
+                {{#each branches}}
+                   <option value="{{this._id}}">{{this.state}}</option>
+                {{/each}}
+                {{/if}}
+            </select>
+        </div>
+        <input type="submit" value="Save Expenses" class="">
+    </form>
+</div>

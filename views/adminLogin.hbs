@@ -1,0 +1,16 @@
+<div class="content">
+    <h2>Admin Login</h2>
+    <div class="loginForm">
+        <img src="./images/admin_avatar_png.png" alt="">
+        <form action="/adminLogin" method="post">
+            <input type="email" name="email" placeholder="Email Address ...">
+            <input type="password" name="password" placeholder="Password ...">
+            <input type="submit" value="Login">
+        </form>
+        {{#if adminLoginError}}
+        {{#each adminLoginError}}
+        <div class="error">{{this}}</div>
+        {{/each}}
+        {{/if}}
+    </div>
+</div>

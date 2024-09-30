@@ -1,0 +1,40 @@
+<h2>Manage Staff</h2>
+<div class="manage">
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Middle Name</th>
+            <th>Photo</th>
+            <th>Email</th>
+            <th>Qualifaction</th>
+            <th>Date Of Joining</th>
+            <th>Total Salary</th>
+            <th>Paid Salary</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        {{#if staffs}}
+        {{#each staffs}}
+         <tr>
+           <td>{{this.name}}</td>
+           <td>{{this.middleName}}</td>
+           <td><img src="{{this.photo}}" alt=""></td>
+           <td style="font-size: 10px;">{{this.email}}</td>
+           <td>{{this.qualifaction}}</td>
+           <td>{{this.exp}}</td>
+           <td>{{this.totalSalary}}</td>
+           <td>{{this.paidSalary}}</td>
+            <td>
+                 <a href="/updateStaff/{{this._id}}" class="editButton">Edit <i class="fa-solid fa-pen-to-square"></i></a>
+            </td>
+            <td>
+                <a href="/deleteStaff/{{this._id}}" class="deleteButton">Delete <i class="fa-solid fa-trash"></i></a>
+            </td>
+        </tr> 
+        {{/each}}
+        {{/if}}
+    </table>
+</div>
+<div class="add">
+    <a href="/addStaff" class="addButton"><i class="fa-solid fa-plus"></i> Add New Staff</a>
+</div>

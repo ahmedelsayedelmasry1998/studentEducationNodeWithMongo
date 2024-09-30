@@ -1,0 +1,75 @@
+<h2>Profile</h2>
+<div class="profile">
+    <form action="/profile" method="post">
+    <div class="tution">
+        <div class="logo">
+            <img height="250px;width:100%" src="./images/admin_avatar_png.png" alt="">
+        </div>
+        <div class="info">
+            <h3>Tution Info</h3>
+            <div class="row">
+                <span>Tution Name</span>
+                <input type="text" name="name" value="{{name}}">
+                <input type="hidden" name="tutionId" value="{{tutionId}}">
+            </div>
+            <div class="row">
+                <span>Tage Line</span>
+                <input type="text" name="tageLine" value="{{tageLine}}">
+            </div>
+           
+            <div class="row">
+                <span>Address</span>
+                <input type="text" name="address" value="{{address}}">
+            </div>
+            <div class="row">
+                <span>Mobile</span>
+                <input type="text" name="mobile" value="{{phone}}">
+            </div>
+        </div>
+    </div>
+    <div class="profileAction">
+        <div class="actions">
+        <h3>Activity</h3>
+            <table>
+                <tr>
+                    <td>Students</td>
+                    <td>{{countStudent}}</td>
+                </tr>
+                <tr>
+                    <td>Staffs</td>
+                    <td>{{countStaffs}}</td>
+                </tr>
+                <tr>
+                    <td>Branches</td>
+                    <td>{{countBranches}}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="info">
+            <h3>Admin Info</h3>
+        <div class="row">
+                <span>First Name</span>
+                <input type="text" name="fName" value="{{fName}}">
+                <input type="hidden" name="adminId" value="{{adminId}}">
+            </div>
+            <div class="row">
+                <span>Last Name</span>
+                <input type="text" name="lName" value="{{lName}}">
+            </div>
+            <div class="row">
+                <span>Mobile</span>
+                <input type="number" name="phoneAdmin" value="{{phoneAdmin}}">
+            </div>
+            <div class="row">
+                <span>Email</span>
+                <input type="email" name="emailAdmin" value="{{email}}">
+            </div>
+            <div class="row">
+                <span>Address</span>
+                <input type="text" name="addressAdmin" value="{{addressAdmin}}">
+            </div>
+            <input class="" type="submit" value="Save">
+        </div>
+    </div>
+    </form>
+</div>

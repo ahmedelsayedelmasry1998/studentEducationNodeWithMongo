@@ -1,0 +1,38 @@
+<h2>Search Salary</h2>
+<div class="searchSalary">
+    <div class="customSearch">
+        <form action="/searchSalary" method="post">
+        <span>From : </span> <input type="date" name="date1" id="date1">
+        <span>To : </span> <input type="date" name="date2" id="date2">
+        <input type="submit" value="Search">
+        </form>
+    </div>
+    <div id="table">
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Date</th>
+            <th>Name</th>
+            <th>Branch</th>
+            <th>Amount</th>
+            <th>Total</th>
+        </tr>
+        {{#if salaries}}
+        {{#each salaries}}
+         <tr>
+            <td style="font-size: 12px;">{{this._id}}</td>
+            <td style="font-size: 10px;">{{this.date}}</td>
+            <td>{{this.tutionId.name}}</td>
+            <td>{{this.branchId.state}}</td>
+            <td>{{this.amt}}</td>
+            <td>{{this.total}}</td>
+        </tr>
+        {{/each}}
+        {{/if}} 
+        <tr>
+            <td style="font-size: 40px;" colspan="5">Total : </td>
+            <td style="font-size: 30px;">{{total}}</td>
+        </tr>
+    </table>
+    </div>
+</div>

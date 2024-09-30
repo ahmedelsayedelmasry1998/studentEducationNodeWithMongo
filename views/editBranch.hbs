@@ -1,0 +1,49 @@
+
+<h2>Manage Branch</h2>
+<div class="addRow">
+    <form action="/updateBranch" method="post">
+        <div class="row">
+            <span>Address</span>
+            <input type="text" name="address" value="{{branch.address}}" />
+            <input type="hidden" name="branchId" value="{{branch._id}}" />
+        </div>
+        <div class="row">
+            <span>State</span>
+            <select name="state" id="">
+                {{#if gujarat}} 
+                  <option selected value="Gujarat">Gujarat</option>
+                <option   value="Maharashtra">Maharashtra</option>
+                <option  value="West Bengal">West Bengal</option>
+                <option value="Rajasthan">Rajasthan</option>
+                {{/if}}
+                {{#if maharashtra}} 
+                  <option value="Gujarat">Gujarat</option>
+                <option  selected  value="Maharashtra">Maharashtra</option>
+                <option  value="West Bengal">West Bengal</option>
+                <option value="Rajasthan">Rajasthan</option>
+                {{/if}}
+                {{#if westBengal}} 
+                  <option value="Gujarat">Gujarat</option>
+                <option   value="Maharashtra">Maharashtra</option>
+                <option selected  value="West Bengal">West Bengal</option>
+                <option value="Rajasthan">Rajasthan</option>
+                {{/if}}
+                {{#if rajasthan}} 
+                  <option value="Gujarat">Gujarat</option>
+                <option   value="Maharashtra">Maharashtra</option>
+                <option  value="West Bengal">West Bengal</option>
+                <option selected value="Rajasthan">Rajasthan</option>
+                {{/if}}
+            </select>
+        </div>
+        <div class="row">
+            <span>City</span>
+            <input type="text" name="city" value="{{branch.city}}"/>
+        </div>
+        <div class="row">
+            <span>Contact</span>
+            <input type="text" name="contact" value="{{branch.phone}}"/>
+        </div>
+        <input type="submit" value="Edit Branch" class="">
+    </form>
+</div>
